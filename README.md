@@ -2,7 +2,7 @@
 
 ## Algorithm
 
-'''
+```
 #Includes <>
 cstdlib
 iostream
@@ -49,6 +49,4 @@ void printLane(int horseNum, int horseDistanceArray[])
 bool isWinner(int horseNum, int horseDistanceArray[])
   if(\*horseDistanceArray[horseNum] >= TRACKLENGTH)
     return(true)
-'''
-## Potential Additions
-* Tiebreaker
+```
