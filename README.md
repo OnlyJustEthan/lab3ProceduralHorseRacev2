@@ -19,7 +19,7 @@ const MAXRACERS = 5
 const TRACKLENGTH = 15
 int horseTravel[] = {0, 0, 0, 0, 0}
 seed random number
-set uniform\_int\_distribution\<int> dist(0,1);
+set uniform_int_distribution<int> dist(0,1);
 
 
 #Functions
@@ -36,17 +36,17 @@ int Main()
 
 void advance(int horseNum, int horseDistanceArray[])
   coin = dist(rd);
-  \*horseDistanceArray[horseNum] += coin;
+  *horseDistanceArray[horseNum] += coin;
 
 void printLane(int horseNum, int horseDistanceArray[])
   int t = 0
   for(t, t < TRACKLENGTH, t++)
-    if(\*t == \*horseDistanceArray[horseNum])
+    if(*t == *horseDistanceArray[horseNum])
       print("%d", horseNum")
     else
       print(".")
 
 bool isWinner(int horseNum, int horseDistanceArray[])
-  if(\*horseDistanceArray[horseNum] >= TRACKLENGTH)
+  if(*horseDistanceArray[horseNum] >= TRACKLENGTH)
     return(true)
 ```
